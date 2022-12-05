@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
+        <title>Circle Generator</title>
+    </head>
+    <body>
+        <div id="backgraundpopup" class="backgraundpopup">
+            <pre><code><span class="token1" style="color: rgb(150, 203, 254);"></span><br><span class="token2" style="color: rgb(150, 203, 254);"></span><br><span class="token3" style="color: rgb(150, 203, 254);"></span><br><span class="token4" style="color: rgb(150, 203, 254);"></span><br><span class="token5" style="color: rgb(150, 203, 254);"></span><br><span class="token6" style="color: rgb(150, 203, 254);"></span><br><span class="token7" style="color: rgb(150, 203, 254);"></span><br><span class="token8" style="color: rgb(150, 203, 254);"></span><br><span class="token9" style="color: rgb(150, 203, 254);"></span><br><span class="token10" style="color: rgb(150, 203, 254);"></span></code></pre>
+            <div class="backgraundbutton">
+                <button class="copy" onclick="copy()">Copy</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Circle Generator</h1>
+            <h2>
+                Generate
+                <b>nice</b>
+                svg circle
+            </h2>
+        </div>
+        <div class="application">
+            <div class="circles">
+                <div class="circles2">
+                    <svg transform="rotate(0)">
+                        <circle  r="79.57753" cx="50%" cy="50%" fill="none" class="circle2" stroke="#E9E4E6" stroke-width="6"/>
+                        <circle  r="79.57753" cx="50%" cy="50%" fill="none" class="circle1" stroke="#048998" stroke-width="12" stroke-linecap="round" stroke-dasharray="375, 500" />
+                    </svg>
+                </div>
+            </div>
+            <div class="menagment">
+                <div class="menagment2">
+                    <div class="pickcolor">
+                    <h2>Color:</h2>
+                        <input class="inputcolor" id="inputcolor1" placeholder="#048998">
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="size">Size: </label>
+                        <input class="range" type="range" name="size" min="10" max="1400" value="500" step="1" id="size">
+                        <span id="textsize">159</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="weight">Weight: </label>
+                        <input class="range" type="range" name="weight" min="1" max="75" value="12" step="1" id="weight">
+                        <span id="textweight">12</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="percent">Percent: </label>
+                        <input class="range" type="range" name="percent" min="0" max="100"  value="75" step="1" id="percent">
+                        <span id="textpercent">75%</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="rotate">Rotate: </label>
+                        <input class="range" type="range" name="rotate" min="0" max="360"  value="0" step="1" id="rotate">
+                        <span id="textrotate">0°</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="rotate">Round: </label>
+                        <input class="switch" type="checkbox" onclick="check()" id="switch" /><label class="labelswitch" for="switch"></label>
+                        <span>:Square</span>
+                    </div>
+                    <button class="seecode" onclick="openpopup()">See code</button>
+                </div>
+                <div class="menagment3 sleep">
+                    <div class="pickcolor">
+                        <h2>Color:</h2>
+                            <input class="inputcolor" id="inputcolor2" placeholder="#E9E4E6">
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="size">Size: </label>
+                        <input class="range" type="range" name="size" min="10" max="1400" value="500" step="1" id="size2">
+                        <span id="textsize2">159</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="weight">Weight: </label>
+                        <input class="range" type="range" name="weight" min="1" max="75" value="6" step="1" id="weight2">
+                        <span id="textweight2">6</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="percent">Percent: </label>
+                        <input class="range" type="range" name="percent" min="0" max="100"  value="100" step="1" id="percent2">
+                        <span id="textpercent2">100%</span>
+                    </div>
+                    <div class="row">
+                        <label class="textlabel" for="rotate">Round: </label>
+                        <input class="switch2" type="checkbox" onclick="check2()" id="switch2" /><label class="labelswitch2" for="switch2"></label>
+                        <span>:Square</span>
+                    </div>
+                    <button class="seecode" onclick="openpopup()">See code</button>
+                </div>
+                <div class="category">
+                    <button class="ccircle1 categorycheck" onclick="ccircle1()" disabled>
+                        <span>Circle 1</span>
+                    </button>
+                    <button class="ccircle2" onclick="ccircle2()">
+                        <span>Circle 2</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer onclick="gotogithub()">
+            <h2>
+                See more on 
+                <b class="github">github</b>
+            </h2>
+        </footer>
+    </body>
+    <script src="app.js"></script>
+</html>
